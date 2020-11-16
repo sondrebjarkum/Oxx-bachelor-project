@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+@media only screen and (max-width: 800px) {
+    .card-list{
+        justify-content: flex-start;
+    }
+    .member-container{
+        margin: 10% 10%;
+    }
+    .landing{
+        flex-wrap: wrap !important;
+        padding: 10rem 2rem 0 2rem !important;
+
+    }
+    .main-header-text.right{
+        display: none; 
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color:var(--main-bg);
+    color: white;
+    font-family: 'DM Mono', monospace;
+}
+:root{
+    --main-bg: #17141d;
+    --card-bg: #1f1b28;
+    --sub-text: #7a7a8c;
+    --download: #65FFA7;
+    --white: white;
+
+}
+a {
+    text-decoration: none;
+}
+.main-container{
+    padding: 10rem 5rem 0 5rem;
+}
+.main-container h1{
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+.underline{
+    background:var(--white);
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 2px;
+    border: 0;
+}
+
+
+.landing{
+    padding: 10rem 5rem 0 5rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.landing a{
+    color: var(--sub-text);
+    text-decoration: underline;
+}
+
+.main-header-text{
+    box-sizing: border-box;
+}
+.main-header-text headertext{
+    line-height: 1;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+}
+.main-header-text subtext{
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    display: block;
+    color: var(--sub-text);
+}
+.main-header-text.right{
+    text-align: right;
+}

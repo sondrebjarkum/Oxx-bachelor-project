@@ -1,54 +1,154 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="documents.css">
+    <link rel="stylesheet" href="members.css">
+    <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/f32598d32d.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oxx - gruppe xx</title>
+    <title>Oxx - gruppe 31</title>
 </head>
 <body>
-    <section class="card-list">
-        <article class="card">
-            <header class="card-header">
-                <p>15/11-2020</p>
-                <h2>Statusrapport</h2>
+
+        <section class="landing">
+            <header class="main-header-text">
+                <headertext>Gamification <br/>Av Ansettelser</headertext>
+                <subtext>Prosjektgiver: <a href="#">OXX</a></subtext>
+                <subtext>Gruppe: 31</subtext>
             </header>
+            <header class="main-header-text right">
+                <subtext><a href="#members">Medlemmer</a></subtext>
+                <subtext><a href="#documents">Dokumenter</a></subtext>
+            </header>
+        </section>
+
+
+
+    <section id="members" class="main-container">
+        <h1>Medlemmer</h1>
+
+        <section class="members-list">
             
-            <div class="card-content">
-                <!-- <div class="icon">
-                    <i class="fas fa-file-alt"></i>
-                </div> -->
-                <div class="download">
-                    <i class="fas fa-file-alt"></i>
-                    <p>download</p>
-                </div>
-            </div>
-        </article>
+            <member class="member-container">
+                <card class="member">
+                    <div class="avatar">
+                        <img src="./img/dyrli.jpg" alt="dyrli"></img>
+                    </div>
+                    <h3>Christian Dyrli</h3>
+                    <p>IT</p>
+                    <a href="https://www.linkedin.com/in/christian-dyrli-236737189/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/christiandyrli"><i class="fab fa-facebook-square"></i></a>
+                </card>
+            </member>
 
-        <article class="card">
-            <header class="card-header">
-                <p>xx/xx-2021</p>
-                <h2>Prosjektskisse</h2>
-            </header>
-        </article>
+            <member class="member-container">
+                <card class="member">
+                    <div class="avatar">
+                        <img src="./img/borander.jpg" alt="borander"></img>
+                    </div>
+                    <h3>Jørgen Borander</h3>
+                    <p>DATAINGENIØR</p>
+                    <a href="https://www.linkedin.com/in/j%C3%B8rgen-borander-246b101a7/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=1680611301"><i class="fab fa-facebook-square"></i></a>
+                </card>
+            </member>
 
-        <article class="card">
-            <header class="card-header">
-                <p>xx/xx-2021</p>
-                <h2>Forprosjekt</h2>
-            </header>
-        </article>
-    
-        <article class="card">
-            <header class="card-header">
-                <p>xx/xx-2021</p>
-                <h2>Sluttrapport</h2>
-            </header>
-        </article>
+
+            <member class="member-container">
+                <card class="member">
+                    <div class="avatar">
+                        <img src="./img/max.jpg" alt="maximiliam"></img>
+                    </div>
+                    <h3>Max Sharoyan</h3>
+                    <p>ANVENDT DATA</p>
+                    <a href="https://www.linkedin.com/in/max-sharoyan/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/max.stiegler.14"><i class="fab fa-facebook-square"></i></a>
+                </card>
+            </member>
+
+            <member class="member-container">
+                <card class="member">
+                    <div class="avatar">
+                        <img src="./img/sondre.jpg" alt="sondre"></img>
+                    </div>
+                    <h3>Sondre Bjarkum</h3>
+                    <p>ANVENDT DATA</p>
+                    <a href="https://www.linkedin.com/in/sondre-bjarkum-89574995/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/broderchuck"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://github.com/sondrebjarkum"><i class="fab fa-github-square"></i></i></a>
+                </card>
+            </member>
+
+        </section>
+
     </section>
+
+
+    <section id="documents" class="main-container">
+        <h1>Dokumenter</h1>
+    </section>
+        <section class="card-list">
+            
+
+            <article class="card unavailable">
+                <header class="card-header">
+                    <p>xx/xx-2021</p>
+                    <h2>Prosjektskisse</h2>
+                </header>
+                <div class="card-content">
+                    <div class="icon disabled">
+                        <i class="fas fa-file-download"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card unavailable">
+                <header class="card-header">
+                    <p>xx/xx-2021</p>
+                    <h2>Forprosjekt</h2>
+                </header>
+                <div class="card-content">
+                    <div class="icon disabled">
+                        <i class="fas fa-file-download"></i>
+                    </div>
+                </div>
+            </article>
+        
+            <article class="card unavailable">
+                <header class="card-header">
+                    <p>xx/xx-2021</p>
+                    <h2>Sluttrapport</h2>
+                </header>
+                <div class="card-content">
+                    <div class="icon disabled">
+                        <i class="fas fa-file-download"></i>
+                    </div>
+                </div>
+            </article>
+
+            
+            <article class="card">
+                <header class="card-header">
+                    <p>15/11-2020</p>
+                    <h2>Statusrapport</h2>
+                </header>
+                <div class="card-content">
+                    <div class="icon">
+                        <a href="./docs/statusrapport.pdf" download>
+                            <i class="fas fa-file-download"></i>
+                        </a>
+                        <p>.pdf</p>
+                    </div>
+                </div>
+            </article>
+            
+        </section>
+
+
 </body>
 </html>

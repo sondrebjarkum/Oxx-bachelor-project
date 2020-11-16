@@ -1,0 +1,48 @@
+
+.members-list{
+    padding: 3rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.member-container{
+    display:flex;
+    margin: 3% 3%;
+    justify-content: center;
+}
+.avatar{
+    overflow: hidden;
+    border-radius: 50%;
+}
+.avatar img{
+    width: 13rem;
+    height: 13rem;
+   
+    filter: grayscale(1);
+    display: block;
+    overflow: hidden;
+    transition: .2s ease-in-out;
+}
+.member{
+    text-align: center;
+    padding: 2.5rem;
+    background-color: var(--card-bg);
+    box-shadow: -1rem 0 3rem -1rem #000;
+    border-radius: 15px;
+
+}
+.member:hover .avatar img{
+    filter: grayscale(0);
+    transform: scale(1.1, 1.1);
+}
+.member i{
+    color: var(--sub-text);
+    font-size: 2rem;
+    transition: .2s ease-in-out;
+}
+.member i:hover{
+     color: white;
+}
+.member p{
+    color: var(--sub-text)
+}

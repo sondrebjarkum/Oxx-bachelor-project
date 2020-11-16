@@ -1,20 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #17141d;
-    color: white;
-    font-family: 'DM Mono', monospace;
-}
 
-a {
-    text-decoration: none;
-}
 
 .card-list {
     display: flex;
-    padding: 3rem;
+    justify-content: center;
+    padding: 5rem;
     overflow-x: scroll;
 }
 
@@ -33,14 +23,14 @@ a {
 }
 
 
-.card {
+.card{
     height: 300px;
     width: 250px;
     min-width: 190px;
     padding: 1.5rem;
     border-radius: 16px;
-    background: #17141d;
-    box-shadow: -1rem 0 3rem #000;
+    background: var(--card-bg);
+    box-shadow: -1rem 0 3rem -1rem #000;
     display: flex;
     flex-direction: column;
     transition: .2s;
@@ -48,6 +38,11 @@ a {
     scroll-snap-align: start;
     clear: both;
     position: relative;
+}
+.card.unavailable{
+ color: grey;
+ filter: brightness(70%);
+    
 }
 
 .card:focus-within~.card, .card:hover~.card {
@@ -70,7 +65,7 @@ a {
 .card-header p {
     font-size: 14px;
     margin: 0 0 1rem;
-    color: #7a7a8c;
+    color: var(--sub-text);
 }
 
 .card-header h2 {
@@ -83,25 +78,40 @@ a {
 }
 
 .card-content {
-    margin: 2rem 0 0;
-    display: grid;
+    border-top: 1px solid rgb(43, 42, 54);
+    padding-top: 1rem;
+    margin: 2rem 0 0 0;
+    display: flex;
     grid-template-columns: 75px 1fr;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
 }
 
 .icon {
-
-    grid-area: auto;
-    align-self: start;
-    position: relative;
+    display: flex;
     box-sizing: border-box;
 }
-
-.icon i {
-    font-size: 2.5rem;
+.icon.disabled i:hover{
+    cursor: help;
+    color: darkgrey;
 }
-
+.icon i {
+    font-size: 3rem;
+    cursor: pointer;
+    color: grey;
+    transition: .2s ease-in-out;
+}
+.icon i:hover {
+    color: var(--download);
+    transform: translateY(-5px);
+}
+.icon p{
+    box-sizing: border-box;
+    align-self: flex-end;
+    margin: 0 0 0 5px;
+    color: grey;
+}
+/* 
 .download {
     width: fit-content;
     display: flex;
@@ -130,9 +140,6 @@ a {
     margin-right: .4rem;
 }
 
-
-
-
 .download:hover {
     background: linear-gradient(90deg,#ff8a00,#e52e71);
     text-shadow: none;
@@ -141,4 +148,4 @@ a {
     -webkit-box-decoration-break: clone;
     background-clip: text;
     border-color: white;
-}
+} */
